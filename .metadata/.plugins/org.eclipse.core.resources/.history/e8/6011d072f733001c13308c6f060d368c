@@ -1,0 +1,53 @@
+package Kata;
+
+import java.util.Map;
+
+public class DictionaryReplacer {
+	
+	private String output ="";
+	private String[] inputs;
+	private String key;
+
+	public String replace(String input, Map<String, String> dictionry) {
+		
+		if(input.length() <=0) {
+			return output;
+		}
+		else {
+			//String key =input.substring(input.indexOf('$')+1, input.lastIndexOf('$'));
+			
+			//key=key.replace(key, dictionry.get(key));
+			//output = key;
+			replaceKeys(input,dictionry);
+			
+		}
+		return output;
+		
+	}
+	
+	public void replaceKeys(String input, Map<String, String> dictionry) {
+		
+		String chaine="";
+		inputs = input.split(" ");
+		
+		for(int i=0; i<inputs.length;i++) {
+			chaine=inputs[i];
+			 boolean testKey = chaine.charAt(0) =='$' &&  chaine.charAt(chaine.length()-1) =='$';
+			 if(testKey) {
+				 key =input.substring(input.indexOf('$')+1, input.lastIndexOf('$'));
+				 if(key.contains(key)) {
+					 key=key.replace(key, dictionry.get(key));
+					 output +=key+" ";
+				 }
+				 
+			 }
+			 else {
+				 output="NA";
+				 
+			 }
+			 
+		}
+		
+	}
+
+}

@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\naja\Documents\workspace-spring-tool-suite-4-4.8.1.RELEASE\Dictionary_Replacer\.metadata\.plugins\org.eclipse.jdt.core
+636034704.index
+4032687910.index
+465408557.index
+714551903.index

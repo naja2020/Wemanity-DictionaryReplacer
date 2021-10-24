@@ -1,0 +1,14 @@
+package kata.tdd;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DictionaryReplacerTest {
+
+	@Test
+	public void test() {
+		DictionaryReplacer replacer = new DictionaryReplacer();
+	}
+
+}
